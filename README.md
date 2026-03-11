@@ -54,24 +54,24 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-* Un protocole,
+### Un protocole,
 Un protocole est un ensemble de règles et de conventions qui régissent la communication entre deux entités de même niveau (même couche) dans un système en réseau. Il définit le format des messages échangés, l'ordre dans lequel ils sont envoyés, ainsi que les actions à entreprendre lors de leur émission ou réception.
 
-* Une entité protocolaire,
+### Une entité protocolaire,
 Une entité protocolaire est un élément actif (logiciel ou matériel) qui implémente un protocole au sein d'une couche donnée. Elle est capable d'envoyer et de recevoir des PDU (Protocol Data Units) en respectant les règles du protocole. Deux entités homologues (dans deux machines différentes) communiquent via le même protocole.
 
-* Un service,
+### Un service,
 Un service est l'ensemble des fonctionnalités qu'une couche (N) offre à la couche supérieure (N+1). Il représente ce que la couche sait faire, sans exposer comment elle le fait. La relation est verticale : une couche rend service à celle qui est au-dessus d'elle.
   
-* Une primitive de service,
+### Une primitive de service,
 Une primitive de service est une opération élémentaire permettant d'interagir avec un service. Elle matérialise les échanges entre deux couches adjacentes. On distingue quatre types canoniques : Request (demande d'un service), Indication (notification à l'entité distante), Response (réponse à une indication) et Confirm (confirmation de la requête initiale).
 
-* Une Service Data Unit (SDU) par rapport à une PDU
+### Une Service Data Unit (SDU) par rapport à une PDU
 Une SDU (Service Data Unit) est le bloc de données transmis par la couche (N+1) à la couche (N) pour être acheminé. C'est la donnée utile du point de vue de la couche inférieure.
 
 Une PDU (Protocol Data Unit) est le bloc de données que la couche (N) construit en ajoutant son propre en-tête (et éventuellement un trailer) à la SDU reçue. La PDU de la couche (N) devient la SDU de la couche (N−1).
 
-* Un point d'accès à un service SAP (Service Access Point)  
+### Un point d'accès à un service SAP (Service Access Point)  
 Un SAP est l'interface abstraite entre deux couches adjacentes, le point précis où la couche (N) met son service à disposition de la couche (N+1). Il est identifié par une adresse unique (ex. : numéro de port TCP, SAP LLC…) qui permet de démultiplexer les données vers la bonne entité de la couche supérieure.
 
 ---------------------------------------------------
